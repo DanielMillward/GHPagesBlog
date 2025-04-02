@@ -36,7 +36,7 @@ body {
 }
 
 .content {
-  max-width: 600px;
+  max-width: 760px;
   width: 100%;                /* So it shrinks on small screens */
   padding: 20px;
 }
@@ -52,9 +52,13 @@ header {
   text-decoration: none; /* no underline */
   color:#e2e0e0;
   border: none;
-  
+  margin: 0px 10px;
   border-radius: 2px;
   background-color: transparent;
+}
+
+.header-link:hover {
+  text-decoration: underline;
 }
 
 .header-button {
@@ -74,6 +78,14 @@ img {
   width: 100%;
 }
 
+.postTitleBlock {
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 16px;
+}
+
 .postTitle {
   margin: 2px 0px;
   text-decoration: none; /* no underline */
@@ -81,11 +93,50 @@ img {
   background-color: transparent;
 }
 
+.postTitle:hover {
+  text-decoration: underline;
+}
+
 .postDate {
   margin: 2px 0px;
   font-size: 14px;
 }
 
-.postTitleBlock {
-  margin-bottom: 10px;
+
+.postYear {
+  font-size: 20px;
+  margin: 0px;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nameLinkH2 {
+  margin: 0px;
+}
+
+.nameLink {
+  text-decoration: none;
+  color:#0a0;
+}
+
+.nameLink:hover {
+  text-decoration: underline;
+}
+
+.categoryBlock {
+  margin-top: 30px;
+}
+
+.nav {
+  align-items: center;
+}
+
+.githubLink {
+  width: 25px;
+  margin-bottom: -5px;
+  margin-left: 25px;
 }
