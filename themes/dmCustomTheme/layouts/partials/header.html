@@ -1,4 +1,5 @@
 <div id="nav-border" class="container">
+    {{/* Need a reference to the page object while looping through the menus */}}
     {{ $currentPage := . }}
     <nav id="nav" class="nav justify-content-center">
         {{ range .Site.Menus.main }}
@@ -6,8 +7,7 @@
             <a href="{{ .URL }}" class="header-link" {{if eq $currentPage.Path .URL}}style="font-weight: bold"{{end}}>
                 {{ $text := print .Name | safeHTML }}
                 {{ $text }}
-            </a>
-            
+            </a>      
         </button>
         {{ end }}
     </nav>
