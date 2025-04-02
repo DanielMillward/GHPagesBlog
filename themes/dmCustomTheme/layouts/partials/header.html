@@ -1,0 +1,14 @@
+<div id="nav-border" class="container">
+    {{ $currentPage := . }}
+    <nav id="nav" class="nav justify-content-center">
+        {{ range .Site.Menus.main }}
+        <button class="header-button" onclick="window.location.href='{{ .URL }}'">
+            <a href="{{ .URL }}" class="header-link" {{if eq $currentPage.Path .URL}}style="font-weight: bold"{{end}}>
+                {{ $text := print .Name | safeHTML }}
+                {{ $text }}
+            </a>
+            
+        </button>
+        {{ end }}
+    </nav>
+</div>

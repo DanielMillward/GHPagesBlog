@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'SegoeUI';
+  src: url('/fonts/segoeuithis.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SegoeUI';
+  src: url('/fonts/segoeuithisi.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'SegoeUI';
+  src: url('/fonts/segoeuithibd.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SegoeUI';
+  src: url('/fonts/segoeuithisz.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+body {
+  background-color: #1f1f1f;
+  color: #e2e0e0;
+  font-family: SegoeUI;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  max-width: 600px;
+  width: 100%;                /* So it shrinks on small screens */
+  padding: 20px;
+}
+
+header {
+  border-bottom: 2px solid #9b9a9a; /* or any color */
+  padding-bottom: 8px; /* optional, for spacing */
+  padding-top: 8px;
+  margin-bottom: 10px;
+}
+
+.header-link {
+  text-decoration: none; /* no underline */
+  color:#e2e0e0;
+  border: none;
+  
+  border-radius: 2px;
+  background-color: transparent;
+}
+
+.header-button {
+  all: unset;
+  background: none;
+  border-radius: 2px;
+  border-color: none;
+  padding: 4px 6px;
+}
+
+.header-button:hover {
+  background-color: #717171;   /* Darker blue on hover */
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+}
+
+.postTitle {
+  margin: 2px 0px;
+  text-decoration: none; /* no underline */
+  color:#e2e0e0;
+  background-color: transparent;
+}
+
+.postDate {
+  margin: 2px 0px;
+  font-size: 14px;
+}
+
+.postTitleBlock {
+  margin-bottom: 10px;
+}
